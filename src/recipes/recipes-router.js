@@ -24,7 +24,10 @@ recipesRouter
       .then(recipes => {
         res.json(recipes.map(serializeRecipe));
       })
-      .catch(next);
+      .catch( er => {
+        console.log('ERROR:', er);
+        next(er);
+      });
   })
   .post(jsonParser, (req, res, next) => {
     const { title } = req.body;
