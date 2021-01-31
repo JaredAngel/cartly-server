@@ -4,7 +4,8 @@ const logger = require('./logger');
 function errorHandler(error, req, res, next) {
   let response;
   if (NODE_ENV === 'production') {
-    response = { error: { message: 'server error' } };
+    console.error(error);
+    response = { message: error.message, error };
   } else {
     console.error(error);
     logger.error(error.message);
