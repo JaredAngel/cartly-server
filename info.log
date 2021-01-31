@@ -1,0 +1,102 @@
+{"message":"voyage_id is required","level":"error"}
+{"message":"title is required","level":"error"}
+{"message":"label is required","level":"error"}
+{"message":"content is required","level":"error"}
+{"message":"voyage_id is required","level":"error"}
+{"message":"Recipe with id 1 created.","level":"info"}
+{"message":"title is required","level":"error"}
+{"message":"Recipe with id 1 created.","level":"info"}
+{"message":"title is required","level":"error"}
+{"message":"voyage_id is required","level":"error"}
+{"message":"title is required","level":"error"}
+{"message":"label is required","level":"error"}
+{"message":"content is required","level":"error"}
+{"message":"voyage_id is required","level":"error"}
+{"message":"insert into \"ingredients\" (\"content\", \"label\", \"recipe_id\", \"title\") values ($1, $2, $3, $4) returning * - invalid input value for enum ingredient_label: \"Dining\"","level":"error"}
+{"message":"title is required","level":"error"}
+{"message":"label is required","level":"error"}
+{"message":"content is required","level":"error"}
+{"message":"recipe_id is required","level":"error"}
+{"message":"Recipe with id 1 created.","level":"info"}
+{"message":"title is required","level":"error"}
+{"message":"Ingredient with id 1 created.","level":"info"}
+{"message":"title is required","level":"error"}
+{"message":"label is required","level":"error"}
+{"message":"content is required","level":"error"}
+{"message":"recipe_id is required","level":"error"}
+{"message":"Recipe with id 1 created.","level":"info"}
+{"message":"title is required","level":"error"}
+{"message":"title is required","level":"error"}
+{"message":"Recipe with id 1 created.","level":"info"}
+{"message":"insert into \"ingredients\" (\"content\", \"label\", \"recipe_id\", \"title\") values ($1, $2, $3, $4) returning * - column \"title\" of relation \"ingredients\" does not exist","level":"error"}
+{"message":"Recipe with id 1 created.","level":"info"}
+{"message":"Ingredient with id 1 created.","level":"info"}
+{"message":"Recipe with id 2 created.","level":"info"}
+{"message":"Ingredient with id 2 created.","level":"info"}
+{"message":"Ingredient with id 3 created.","level":"info"}
+{"message":"title is required","level":"error"}
+{"message":"title is required","level":"error"}
+{"message":"title is required","level":"error"}
+{"message":"title is required","level":"error"}
+{"message":"content is required","level":"error"}
+{"message":"content is required","level":"error"}
+{"message":"content is required","level":"error"}
+{"message":"content is required","level":"error"}
+{"message":"content is required","level":"error"}
+{"message":"content is required","level":"error"}
+{"message":"content is required","level":"error"}
+{"message":"insert into \"ingredients\" (\"content\", \"label\", \"recipe_id\", \"title\") values ($1, $2, $3, $4) returning * - invalid input syntax for type integer: \"...\"","level":"error"}
+{"message":"insert into \"ingredients\" (\"content\", \"label\", \"recipe_id\", \"title\") values ($1, $2, $3, $4) returning * - invalid input syntax for type integer: \"...\"","level":"error"}
+{"message":"insert into \"ingredients\" (\"content\", \"label\", \"recipe_id\", \"title\") values ($1, $2, $3, $4) returning * - invalid input syntax for type integer: \"...\"","level":"error"}
+{"message":"insert into \"ingredients\" (\"content\", \"label\", \"recipe_id\", \"title\") values ($1, $2, $3, $4) returning * - invalid input syntax for type integer: \"...\"","level":"error"}
+{"message":"insert into \"ingredients\" (\"content\", \"label\", \"recipe_id\", \"title\") values ($1, $2, $3, $4) returning * - invalid input syntax for type integer: \"...\"","level":"error"}
+{"message":"content is required","level":"error"}
+{"message":"content is required","level":"error"}
+{"message":"content is required","level":"error"}
+{"message":"content is required","level":"error"}
+{"message":"content is required","level":"error"}
+{"message":"Recipe with id 1 created.","level":"info"}
+{"message":"content is required","level":"error"}
+{"message":"Recipe with id 1 created.","level":"info"}
+{"message":"insert into \"ingredients\" (\"content\", \"label\", \"recipe_id\", \"title\") values ($1, $2, $3, $4) returning * - invalid input value for enum ingredient_label: \"Select One\"","level":"error"}
+{"message":"Recipe with id 2 created.","level":"info"}
+{"message":"Ingredient with id 1 created.","level":"info"}
+{"message":"Ingredient with id 1 created.","level":"info"}
+{"message":"title is required","level":"error"}
+{"message":"label is required","level":"error"}
+{"message":"content is required","level":"error"}
+{"message":"recipe_id is required","level":"error"}
+{"message":"Recipe with id 1 created.","level":"info"}
+{"message":"title is required","level":"error"}
+{"message":"firstname is required","level":"error"}
+{"message":"User with id 3 created.","level":"info"}
+{"message":"User with id 4 created.","level":"info"}
+{"message":"User with id 5 created.","level":"info"}
+{"message":"User with id 6 created.","level":"info"}
+{"message":"select * from \"user\" where \"username\" = $1 limit $2 - relation \"user\" does not exist","level":"error"}
+{"message":"UsersService.serializeUser is not a function","level":"error"}
+{"message":"select * from \"user\" where \"username\" = $1 limit $2 - relation \"user\" does not exist","level":"error"}
+{"message":"select * from \"users\" where \"username\" = $1 limit $2 - relation \"users\" does not exist","level":"error"}
+{"message":"Recipe with id 1 created.","level":"info"}
+{"message":"Ingredient with id 1 created.","level":"info"}
+{"message":"insert into \"recipes\" (\"title\") values ($1) returning * - null value in column \"author_id\" violates not-null constraint","level":"error"}
+{"message":"Recipe with id 2 created.","level":"info"}
+{"message":"Recipe with id 3 created.","level":"info"}
+{"message":"Ingredient with id 1 created.","level":"info"}
+{"message":"user is not defined","level":"error"}
+{"message":"Recipe with id 1 created.","level":"info"}
+{"message":"Ingredient with id 1 created.","level":"info"}
+{"message":"Recipe with id 2 created.","level":"info"}
+{"message":"Ingredient with id 2 created.","level":"info"}
+{"message":"Ingredient with id 3 created.","level":"info"}
+{"message":"Ingredient with id 4 created.","level":"info"}
+{"message":"Recipe with id 3 created.","level":"info"}
+{"message":"Ingredient with id 5 created.","level":"info"}
+{"message":"Ingredient with id 6 created.","level":"info"}
+{"message":"Ingredient with id 7 created.","level":"info"}
+{"message":"Recipe with id 4 created.","level":"info"}
+{"message":"Ingredient with id 8 created.","level":"info"}
+{"message":"Recipe with id 1 created.","level":"info"}
+{"message":"Recipe with id 2 created.","level":"info"}
+{"message":"Ingredient with id 1 created.","level":"info"}
+{"message":"Ingredient with id 2 created.","level":"info"}
