@@ -4,8 +4,9 @@ const supertest = require('supertest');
 const knex = require('knex');
 const app = require('../src/app');
 const { makeRecipesArray } = require('./fixtures/recipes.fixtures');
+const { makeUsersArray } = require('./fixtures/users.fixtures');
 
-describe('Recipes Endpoints', () => {
+describe.only('Recipes Endpoints', () => {
   let db;
 
   before('make knex instance', () => {
@@ -19,14 +20,22 @@ describe('Recipes Endpoints', () => {
   after('disconnect from db', () => db.destroy());
 
   before('clean the table', () => db.raw('TRUNCATE recipes RESTART IDENTITY CASCADE'));
+  before('clean the table', () => db.raw('TRUNCATE users RESTART IDENTITY CASCADE'));
+  
+  beforeEach('make user', () => {
+    const testUser = makeUsersArray();
+    db('users').insert(testUser[0]);
+  });
 
   afterEach('cleanup', () => db.raw('TRUNCATE recipes RESTART IDENTITY CASCADE'));
+  afterEach('cleanup', () => db.raw('TRUNCATE users RESTART IDENTITY CASCADE'));
 
   describe(`GET /api/recipes`, () => {
     context(`Given no recipes`, () => {
-      it(`responds with 200 and an empty list`, () => {
+      it.only(`responds with 200 and an empty list`, () => {
         return supertest(app)
           .get('/api/recipes')
+          .set('Authorization', `Bearer ${process.env.AUTH_TOKEN}`)
           .expect(200, []);
       });
     });

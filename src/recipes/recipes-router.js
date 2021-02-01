@@ -20,6 +20,7 @@ recipesRouter
   .route('/')
   .get((req, res, next) => {
     const knexInstance = req.app.get('db');
+    console.log(req.user);
     RecipesService.getAllRecipes(knexInstance, req.user.id)
       .then(recipes => {
         res.json(recipes.map(serializeRecipe));

@@ -1,26 +1,170 @@
-# Express Boilerplate!
+# Cartly - Server
 
-This is a boilerplate project used for starting new projects!
+## Built By
+Jared Angel Escobedo
 
-## Set up
+## Links
+Live site: https://cart-client.vercel.app  
+Server: https://cartly-001.herokuapp.com   
+Client Repo: https://github.com/JaredAngel/cartly-client  
+Server Repo: https://github.com/JaredAngel/cartly-server
 
-Complete the following steps to start a new project (NEW-PROJECT-NAME):
+### Summary
+Cartly allows you to log your favorite recipes in your own private journal. 
+Making it easier to keep a list of all required ingredients handy for grocery shopping!
 
-1. Clone this repository to your local machine `git clone BOILERPLATE-URL NEW-PROJECTS-NAME`
-2. `cd` into the cloned repository
-3. Make a fresh start of the git history for this project with `rm -rf .git && git init`
-4. Install the node dependencies `npm install`
-5. Move the example Environment file to `.env` that will be ignored by git and read by the express server `mv example.env .env`
-6. Edit the contents of the `package.json` to use NEW-PROJECT-NAME instead of `"name": "express-boilerplate",`
+## API Documentation
 
-## Scripts
+### `/recipes`
 
-Start the application `npm start`
+##### REQUEST: `GET /recipes`
+##### RESPONSE:
+<pre><code>
+[
+    {
+        "id": 1,
+        "title": "First Recipe",
+        "created_ts": "2029-01-22T16:28:32.615Z",
+        "author_id": 1
+    },
+    {
+        "id": 2,
+        "title": "Second Recipe",
+        "created_ts": "2029-01-22T16:28:32.615Z",
+        "author_id": 1
+    },
+    {
+        "id": 3,
+        "title": "Third Recipe",
+        "created_ts": "2029-01-22T16:28:32.615Z",
+        "author_id": 2
+    },
+    {
+        "id": 4,
+        "title": "Fourth Recipe",
+        "created_ts": "2029-01-22T16:28:32.615Z",
+        "author_id": 2
+    }
+]
+</pre></code>
 
-Start nodemon for the application `npm run dev`
+##### REQUEST: `GET /recipes/recipe_id`
+##### RESPONSE:
+<pre><code>
+{
+    "id": 2,
+    "title": "Second Recipe",
+    "created_ts": "2029-01-22T16:28:32.615Z",
+    "author_id": 1
+}
+</pre></code>
 
-Run the tests `npm test`
+##### REQUEST: `POST /recipes`
+##### RESPONSE:
+<pre><code>
+{
+    "id": 3,
+    "title": "Fifth Recipe",
+    "created_ts": "2020-12-17T07:32:08.307Z",
+    "author_id": 3
+}
+</pre></code>
 
-## Deploying
+##### REQUEST: `DELETE /recipes/recipe_id`
+##### RESPONSE:
+<pre><code>
+{} // Recipe is removed from database
+</pre></code>
 
-When your new project is ready for deployment, add a new Heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's master branch.
+### `/ingredients`
+
+##### REQUEST: `GET /ingredients`
+##### RESPONSE:
+<pre><code>
+[
+    {
+        "id": 1,
+        "title": "First ingredient!",
+        "label": "Spices",
+        "content": "Lorem Ipsum dolor sit",
+        "created_ts": "2029-01-22T16:28:32.615Z",
+        "recipe_id": 1,
+        "author_id": 1
+    },
+    {
+        "id": 2,
+        "title": "Second ingredient!",
+        "label": "Meat/Fish",
+        "content": "Lorem Ipsum dolor sit",
+        "created_ts": "2029-01-22T16:28:32.615Z",
+        "recipe_id": 1,
+        "author_id": 1
+    },
+    {
+        "id": 3,
+        "title": "Third ingredient!",
+        "label": "Produce",
+        "content": "Lorem Ipsum dolor sit",
+        "created_ts": "2029-01-22T16:28:32.615Z",
+        "recipe_id": 2,
+        "author_id": 1
+    }
+]
+</pre></code>
+
+##### REQUEST: `GET /ingredients/ingredient_id`
+##### RESPONSE:
+<pre><code>
+{
+    "id": 5,
+    "title": "Fifth ingredient!",
+    "label": "Other",
+    "content": "Lorem Ipsum dolor sit",
+    "created_ts": "2029-01-22T16:28:32.615Z",
+    "recipe_id": 3,
+    "author_id": 2
+}
+</pre></code>
+
+##### REQUEST: `POST /ingredients`
+##### RESPONSE:
+<pre><code>
+{
+    "title": "First ingredient!",
+    "label": "Spices",
+    "content": "Lorem Ipsum dolor sit",
+    "created_ts": "2029-01-22T16:28:32.615Z",
+    "recipe_id": 1,
+    "author_id": 1
+}
+</pre></code>
+
+##### REQUEST: `DELETE /ingredients/ingredient_id`
+##### RESPONSE:
+<pre><code>
+{} // Ingredient is removed from database
+</pre></code>
+
+### `/users`
+
+##### REQUEST: `POST /users`
+##### RESPONSE:
+<pre><code>
+{
+    "id": "1",
+    "firstname": "Sous",
+    "lastname": "Chef_1,
+    "username": "SousChef_1",
+    "password": "secret_sauce" // JWT encrypted
+}
+</pre></code>
+
+## Technologies
+- Front End
+  * HTML
+  * CSS
+  * JavaScript
+  * React
+- Back End
+  * Node.js
+  * Express

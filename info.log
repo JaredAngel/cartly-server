@@ -100,3 +100,47 @@
 {"message":"Recipe with id 2 created.","level":"info"}
 {"message":"Ingredient with id 1 created.","level":"info"}
 {"message":"Ingredient with id 2 created.","level":"info"}
+{"message":"firstname is required","level":"error"}
+{"message":"firstname is required","level":"error"}
+{"message":"firstname is required","level":"error"}
+{"message":"firstname is required","level":"error"}
+{"message":"firstname is required","level":"error"}
+{"message":"firstname is required","level":"error"}
+{"message":"firstname is required","level":"error"}
+{"message":"firstname is required","level":"error"}
+{"message":"firstname is required","level":"error"}
+{"message":"firstname is required","level":"error"}
+{"message":"firstname is required","level":"error"}
+{"message":"firstname is required","level":"error"}
+{"message":"firstname is required","level":"error"}
+{"message":"firstname is required","level":"error"}
+{"message":"firstname is required","level":"error"}
+{"message":"firstname is required","level":"error"}
+{"message":"firstname is required","level":"error"}
+{"message":"firstname is required","level":"error"}
+{"message":"firstname is required","level":"error"}
+{"message":"firstname is required","level":"error"}
+{"message":"lastname is required","level":"error"}
+{"message":"username is required","level":"error"}
+{"message":"Cannot read property 'length' of undefined","level":"error"}
+{"message":"firstname is required","level":"error"}
+{"message":"lastname is required","level":"error"}
+{"message":"username is required","level":"error"}
+{"message":"Cannot read property 'length' of undefined","level":"error"}
+{"message":"firstname is required","level":"error"}
+{"message":"lastname is required","level":"error"}
+{"message":"username is required","level":"error"}
+{"message":"firstname is required","level":"error"}
+{"message":"lastname is required","level":"error"}
+{"message":"username is required","level":"error"}
+{"message":"firstname is required","level":"error"}
+{"message":"lastname is required","level":"error"}
+{"message":"username is required","level":"error"}
+{"message":"firstname is required","level":"error"}
+{"message":"lastname is required","level":"error"}
+{"message":"username is required","level":"error"}
+{"message":"UsersService.getAllUsers is not a function","level":"error"}
+{"message":"UsersService.getAllUsers is not a function","level":"error"}
+{"message":"firstname is required","level":"error"}
+{"message":"lastname is required","level":"error"}
+{"message":"username is required","level":"error"}
