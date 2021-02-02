@@ -144,3 +144,6 @@
 {"message":"firstname is required","level":"error"}
 {"message":"lastname is required","level":"error"}
 {"message":"username is required","level":"error"}
+{"message":"Recipe with id 1 created.","level":"info"}
+{"message":"Recipe with id 2 created.","level":"info"}
+{"message":"Ingredient with id 1 created.","level":"info"}
